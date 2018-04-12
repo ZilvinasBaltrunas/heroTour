@@ -1,11 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
-  <h1>
-    {{ title }}
-    {{ subtitle }}
-  </h1>
-  <app-heroes></app-heroes>
-  <app-messages></app-messages>
+  	<h1>
+    	{{ title }}
+    	{{ subtitle }}
+  	</h1>
+  	<nav>
+  		<a routerLink="/dashboard">Dashboard</a>
+  		<a routerLink="/heroes">Heroes</a>
+	</nav>
+  	<router-outlet></router-outlet>
+  	<app-messages></app-messages>
 </div>
-
-<router-outlet></router-outlet>
